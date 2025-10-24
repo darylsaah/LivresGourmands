@@ -3,7 +3,7 @@
 
 class MockDB {
   constructor() {
-    console.log('🔧 Mode mock activé - Pas de connexion MySQL');
+    console.log(' Mode mock activé - Pas de connexion MySQL');
   }
 
   async query(sql, params = []) {

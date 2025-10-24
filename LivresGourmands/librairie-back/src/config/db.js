@@ -32,16 +32,16 @@ try {
   // Test de connexion
   db.getConnection()
     .then((connection) => {
-      console.log(`✅ Connecté à MySQL : ${dbConfig.database}`);
+      console.log(` Connecté à MySQL : ${dbConfig.database}`);
       connection.release();
     })
     .catch((err) => {
-      console.error("❌ Erreur de connexion MySQL :", err.message);
-      console.log("💡 Pour tester l'API, installez MySQL ou utilisez un service cloud");
-      console.log("💡 Voir docs/installation-mysql.md pour les instructions");
+      console.error("Erreur de connexion MySQL :", err.message);
+      console.log("Pour tester l'API, installez MySQL ou utilisez un service cloud");
+      console.log(" Voir docs/installation-mysql.md pour les instructions");
     });
 } catch (error) {
-  console.error("❌ Erreur de configuration MySQL :", error.message);
+  console.error("Erreur de configuration MySQL :", error.message);
 }
 
 export default db;

@@ -1,6 +1,6 @@
 # Les Livres Gourmands - API REST
 
-## 📚 Présentation du projet
+##  Présentation du projet
 
 API REST complète pour la gestion d'une librairie en ligne "Les Livres Gourmands". Cette API permet la gestion des produits (CRUD), des utilisateurs, du panier, des commandes, des avis/commentaires et des listes de cadeaux.
 
