@@ -1,0 +1,46 @@
+{
+  "name": "livresgourmands-back",
+  "version": "1.0.0",
+  "description": "API REST Node.js + Express + MySQL pour la librairie Les Livres Gourmands",
+  "main": "librairie-back/src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node librairie-back/src/server.js",
+    "dev": "nodemon librairie-back/src/server.js",
+    "migrate": "mysql -u root -p livresgourmands < sql/ddl.sql",
+    "seed": "mysql -u root -p livresgourmands < scripts/seed-data.sql",
+    "cleanup-paniers": "node scripts/cleanup-expired-paniers.js",
+    "test": "echo \"Tests à implémenter\" && exit 0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "nodejs",
+    "express",
+    "mysql",
+    "jwt",
+    "ecommerce",
+    "librairie"
+  ],
+  "author": "Daryl Saah",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-username/livres-gourmands.git"
+  }
+}
