@@ -32,7 +32,6 @@ try {
   // Test de connexion
   db.getConnection()
     .then((connection) => {
-      console.log(` Connecté à MySQL : ${dbConfig.database}`);
       connection.release();
     })
     .catch((err) => {
